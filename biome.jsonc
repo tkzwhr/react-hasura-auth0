@@ -8,11 +8,11 @@
     "rules": {
       "recommended": true
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*", "demo/src/**/*"]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
-    "include": ["src/**/*"]
+    "include": ["src/**/*", "demo/src/**/*"]
   }
 }
