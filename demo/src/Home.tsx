@@ -40,12 +40,13 @@ export default function Home() {
   const state = useContext(AuthContext);
 
   const login = useCallback(() => {
-      state.mode === 'auth0' && state.auth0?.client?.loginWithPopup().then(() => {
+    state.mode === "auth0" &&
+      state.auth0?.client?.loginWithPopup().then(() => {
         window.location.reload();
       });
   }, [state]);
 
-  if (state.mode === 'jwt') {
+  if (state.mode === "jwt") {
     return <HomePage auth0={null} />;
   }
 

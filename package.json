@@ -22,5 +22,8 @@
   "peerDependencies": {
     "react": "^18",
     "@apollo/client": "^3"
-  }
+  },
+  "trustedDependencies": [
+    "@tkzwhr/react-auth0-suspense"
+  ]
 }
